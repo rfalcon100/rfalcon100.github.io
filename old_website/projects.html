@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Basic information aboyt Ricardo Falcon Perez.">
+
+	<title>Ricardo Falcon Perez &ndash; Software Developer & Data Analyst</title>   
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+	    <!--[if lte IE 8]>
+		  <link rel="stylesheet" href="/combo/1.18.13?/css/layouts/side-menu-old-ie.css">
+	    <![endif]-->
+	    <!--[if gt IE 8]><!-->
+		  <link rel="stylesheet" href="./side-menu.css">
+	    <!--<![endif]-->
+      
+	<!--[if lt IE 9]>
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+    
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-41480445-1', 'purecss.io');
+	ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div id="layout">
+	    <!-- Menu toggle -->
+	    <a href="#menu" id="menuLink" class="menu-link">
+		  <!-- Hamburger icon -->
+		  <span></span>
+	    </a>
+
+	    <div id="menu">
+		  <div class="pure-menu">
+			<a class="pure-menu-heading" href="./index.html">Home</a>
+
+			<ul class="pure-menu-list">
+			    <li class="pure-menu-item"><a href="./workExperience.html" class="pure-menu-link">Work Experience</a></li>
+			    <li class="pure-menu-item"><a href="./projects.html" class="pure-menu-link">Projects</a></li>
+			    <li class="pure-menu-item"><a href="./music.html" class="pure-menu-link">Music</a></li>
+			    <li class="pure-menu-item"><a href="./files/RicardoFalconPerez_CV.pdf" class="pure-menu-link">CV</a></li>
+			    <li class="pure-menu-item"><a href="./contact.html" class="pure-menu-link">Contact</a></li>                
+			</ul>
+		  </div>
+		  <div id="menu-image">
+			<img class="pure-img-responsive" src="./images/logo.png" height="100" width="100" alt="Logo">
+			<p>
+			Updated: Feb 2018
+			</p>
+			<p>
+			&copy; 2018 Ricardo Falcon Perez
+			</p>
+		  </div>
+	    </div>
+
+	    <div id="main">
+		  <div class="header">
+			<h1>Ricardo Falcon Perez</h1>
+			<h2>Software Developer & Data Analyst</h2>
+		  </div>
+
+		  <div class="content">
+			<h2 class="content-subhead">Recent projects & Research</h2>
+			<p>
+			    These are some of the recent projects and research that I've been involved in and brief description about them. You can find a bigger list in <a href="./files/RicardoFalconPerez_CV.pdf"> full CV. </a>
+			</p>
+		
+
+			<h2 class="content-subhead">Image texture synthesis with Deep Neural Networks</h2>
+			<p style:"float: left">
+			    Term project for the Deep Learning course in Aalto University. We implemented a method for high resolution texture synthesis based on <a href="https://arxiv.org/abs/1505.07376">Texture Synthesis Using Convolutional Neural Networks by Gatis et al</a> and <a href="https://wxs.ca/research/multiscale-neural-synthesis/Snelgrove-multiscale-texture-synthesis.pdf">High Resolution Multi-Scale Neural Texture Synthesis by Snelgrove</a>.
+			</p>
+			<p>
+				The method uses a deep neural network to extract statistical features of some input image, and then uses the same network to update the pixel values of a generated image by minizing the loss function between the features of the input and generated images. High resolution support is added using a Gaussian pyramid.
+			</p>
+			<p>
+			    Key Features:
+			    <ul>
+				<li>Brief literature review for texture synthesis and style transfer using deep neural networks.</li>
+				<li>Developed in Python and Tensorflow.</li>
+			    </ul>
+			</p>
+			<p>
+				High resolution images:
+				<ul>
+					<li>
+						<a href="./images/compare.jpg" target="_blank">Comparison of results.</a>
+					</li>
+					<li>
+						<a href="./images/extraImg.jpg" target="_blank">Results on images that are not strictly textures.</a>
+					</li>
+					<li>
+						<a href="./images/results00.png" target="_blank">Different levels of the pyramid.</a>
+					</li>
+					<li>
+						<a href="./images/resultsUpscaleMarbles.png" target="_blank">Image with texture at multiple scales.</a>
+					</li>
+					<li>
+						<a href="./images/resultsUpscalePebbles.png" target="_blank">Upscaling low resolution image.</a>
+					</li>
+					<li>
+							<a  target="_blank">Comparison of results.</a>
+						</li>
+					<li>
+						<a  target="_blank">Results on images that are not strictly textures.</a>
+					</li>
+					<li>
+						<a target="_blank">Different levels of the pyramid.</a>
+					</li>
+					<li>
+						<a  target="_blank">Image with texture at multiple scales.</a>
+					</li>
+					<li>
+						<a  target="_blank">Upscaling low resolution image.</a>
+					</li>
+				</ul>
+			</p>
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupTexture" href="./images/compare.jpg">
+					<img class="pure-img-responsive" src="./images/compareSmall.png" alt="Comparison of our results with state of the art methods. Pyramid[1] is our result obtained from the first level of the pyramid (not the base level)." /></a>
+				</div>
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupTexture" href="./images/extraImg.jpg">
+					<img class="pure-img-responsive" src="./images/extraImgSmall.png" alt="Additional results on images that are not strictly textures. The base and first three levels of the pyramid are shown." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupTexture" href="./images/results00.png">
+					<img class="pure-img-responsive" src="./images/results00Small.png" alt="Comparing our results from different levels of the pyramid, and the single scale method on a variety of low resolution images." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupTexture" href="./images/resultsUpscaleMarbles.png">
+					<img class="pure-img-responsive" src="./images/resultsUpscaleMarblesSmall.png" alt="Our result on a image with texture at multiple scales. The result has a resolution 2 times higher than the input image. The results shown include the base, and first 5 levels of the pyramid." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupTexture" href="./images/resultsUpscalePebbles.png">
+					<img class="pure-img-responsive" src="./images/resultsUpscalePebblesSmall.png" alt="Our result on an low resolution image texture. The result has a resolution 4 times higher than the input image. The results shown include the base, and first 4 levels of the pyramid." /></a>
+				</div>				
+			</div> 
+			
+			
+			<h2 class="content-subhead">Parametric Audio Equalization using Genetic Algorithms</h2>
+			<p style:"float: left">
+				Equalizing (filtering) audio signals can be difficult for non tehcnical people as it requires understanding of complex tools such as equalizers and their parameters. Additionally, with some tools like the parametric equalizers it is not possible to obtain any arbritary equalization curve due to the nature of the controls. 
+			</p>
+			<p>
+				I implemented a small Matlab application roughly based on <a href="http://www.j3l7h.de/publications/graphicalcontrol_web.pdf">"Graphical Control of a parametric equalizer" by Loviscach</a>. It lets the user draw any arbitray target equalization curve, and then the parameters for a 5 band parametric equalizer are automatically selected via a genetic algorithm so that the equalizer matches the target curve as close as possible. 
+			</p>
+			<p>
+				Key Features:
+				<ul>
+				<li>Multiple visualizaiton options to analyze the evolution process.</li>
+				</ul>
+			</p>
+			Videoss:
+				
+			<p><a href="https://www.youtube.com/watch?v=1BTlbfOmiSw"> Easy target curve A.</a></p>
+			<p><a href="https://www.youtube.com/watch?v=Gz7Fshb63sc"> Easy target curve B.</a></p>
+			<p><a href="https://www.youtube.com/watch?v=orNl1aEc-qU"> Medium target curve A.</a></p>
+			<p><a href="https://www.youtube.com/watch?v=3J4U1vgowq8"> Medium target curve B.</a></p>
+			<p><a href="https://www.youtube.com/watch?v=GPvPrFMvkow"> Hard target curve A.</a></p>
+			<p><a href="https://www.youtube.com/watch?v=n9wf2jpfKhw"> Hard target curve B.</a></p>
+
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run00_bestSolution.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run00_bestSolutionSmall.png" alt="Magnitude response of the best solution obtained for the easy target curve. The intermidiate solutions are the best solutions of previous generations." /></a>
+				</div>
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run00_bestSolutionComponents.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run00_bestSolutionComponentsSmall.png" alt="Magnitude response of the individual bands that compose the best solution." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run01_fitness.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run01_fitnessSmall.png" alt="Average, best, and average of the best 10 indivuals log tness over all generations." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run01_fitnessHeatmap.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run01_fitnessHeatmapSmall.png" alt="Fitness heatmap. The color scale represents relative log fittness." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run02_3d.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run02_3dSmall.png" alt="3D fittness heatmap. The color scale represents relative log fitness." /></a>
+				</div>	
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run02_bestSolution.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run02_bestSolutionSmall.png" alt="Magnitude response of the individual bands that compose the best solution." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupParamEQ" href="./images/paramEQ/run02_bestSolutionComponents.png">
+					<img class="pure-img-responsive" src="./images/paramEQ/run02_bestSolutionComponentsSmall.png" alt="Average, best, and average of the best 10 indivuals log tness over all generations." /></a>
+				</div>			
+			</div> 
+		
+
+			<h2 class="content-subhead">Virtua Analog Phasers</h2>
+			<p style:"float: left">
+					Implemented an offline phaser effect for audio signals using cascaded all pass filters and a
+					feedback loop based on the famous MXR Phase 100 pedal. Developed in MATLAB.
+			</p>
+			
+			<iframe src="//www.slideshare.net/slideshow/embed_code/key/z4k9D35qBpsSzl" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/z4k9D35qBpsSzl" title="Virtual Analog Phasers" target="_blank">Virtual Analog Phasers</a> </strong> from <strong><a href="//www.slideshare.net/rfalcon1001" target="_blank">rfalcon1001</a></strong> </div>
+
+			<p>Video
+				<a href="https://youtu.be/-kdfKjh4a9M">Video</a>
+			</p>
+
+			<p>
+				<a href="https://clyp.it/user/r15jrygz">Audio examples.</a>
+			</p>
+
+
+			<h2 class="content-subhead">(Untitled) - Custom Ear Trainer</h2>
+			<p style:"float: left">
+			    Ear training is a vital skill for both musicians and audio engineers. While there are numerous tools available that help musicians develop a critical hearing, there are very few tools that target audio engineers. I am developing a simple program that employs the techniques I've used to train my hearing.
+			</p>
+			<p>
+			    Key Features:
+			    <ul>
+				<li>Compose a reference track by importing audio files to the application or use default tracks like pink noise.</li>
+				<li>Apply random EQ to the reference track within custom parameters.</li>
+				<li>Apply random dynamics variance to the reference track within custom parameters.</li>
+				<li>Keep track of the training with detailed statistics.</li>
+			    </ul>
+			</p>
+			  
+			<div class="pure-g" style:"float: left">
+			    <div class="pure-u-1-4">
+				  
+			    </div>
+			</div>
+			
+			
+			<h2 class="content-subhead">Bachelor Thesis: Analysis of short sounds replication using primitive waveforms synthesis and genetic algorithms</h2>
+			<p style:"float: left">
+			    For my Bachelor thesis I built an application to study audio and genetic algorithms. The idea behind the project was to use additive synthesis to replicate short sounds, using a combination of sine waves (and other waveforms). The concept was inspired by <a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/"> Roger Johansson's project </a> that replicates images using a combination of simple polygons obtained with genetic algorithms. The full text (in spanish) is available <a href="https://mega.nz/#!CoZR2b4J!RgWKzD6hxsi6uz7U1zD8fu8VngriEwdFgdD2480vYJ8"> here, </a> and in the <a href="http://132.248.9.195/ptd2016/junio/301511155/Index.html"> University website. </a>
+				
+			</p>
+			<p>
+			    Key Features:
+			    <ul>
+				<li>Evolution parameters highly customizable.</li>
+				<li>Presents comprehensive information about the evolution process. </li>
+				<li>Applies a standard ADSR envelope.</li>
+				<li>Available waveforms include sine, triangular, square and sawtooth.</li>
+			    </ul>
+			</p>  
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupThesis" href="./images/thesis00.png">
+					<img class="pure-img-responsive" src="./images/thesis00small.png" alt="Mutation parameters." /></a>
+				</div>
+				<div class="pure-u-1-4">
+					<a class="fancybox" rel="groupThesis" href="./images/thesis01.png">
+					<img class="pure-img-responsive" src="./images/thesis01small.png" alt="Spectrogram parameters." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupThesis" href="./images/thesis02.png">
+					<img class="pure-img-responsive" src="./images/thesis02small.png" alt="Main window." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupThesis" href="./images/thesis03.png">
+					<img class="pure-img-responsive" src="./images/thesis03small.png" alt="Evolution details - Frequency of the first wave." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupThesis" href="./images/thesis04.png">
+					<img class="pure-img-responsive" src="./images/thesis04small.png" alt="Evolution Details - ADSR envelope parameters." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupThesis" href="./images/thesis05.png">
+					<img class="pure-img-responsive" src="./images/thesis05small.png"  alt="Evolution Details - Multiple waves' frequency." /></a>
+				</div>
+				<div class="pure-u-1-4">	
+					<a class="fancybox" rel="groupThesis" href="./images/thesis06.png">
+					<img class="pure-img-responsive" src="./images/thesis06small.png"  alt="Plotting options." /></a>				
+				</div>
+			</div>
+			
+			
+			
+			<h2 class="content-subhead">Star Goa - Prototype</h2>
+			<p style:"float: left">
+				This project expans on what I learned during a videogame's development course using the Unity engine. I 
+			
+			    
+			</p>
+			<p>
+			    Key Features:
+			    <ul>
+				<li>Evolution parameters highly customizable.</li>
+				<li>Presents comprehensive information about the evolution process. </li>
+				<li>Applies a standard ADSR envelope.</li>
+				<li>Available waveforms include sine, triangular, square and sawtooth.</li>
+			    </ul>
+			</p>  
+			<div class="pure-g">
+			    <div class="pure-u-1-4">
+				  <a class="fancybox" rel="group" href="./images/goa00.png">
+					<img class="pure-img-responsive" src="./images/goa00small.png" alt="Prototype development." /></a>
+			    </div>
+			    <div class="pure-u-1-4">
+				  <a class="fancybox" rel="group" href="./images/goa01.png">
+					<img class="pure-img-responsive" src="./images/goa01small.png" alt="Main game window." /></a>
+			    </div>
+			    <div class="pure-u-1-4">
+				  <a class="fancybox" rel="group" href="./images/goa03.png">
+					<img class="pure-img-responsive" src="./images/goa03small.png" alt="Modelling props.." /></a>
+			    </div>
+			    <div class="pure-u-1-4">
+				  <a class="fancybox" rel="group" href="./images/goa04.png">
+					<img class="pure-img-responsive" src="./images/goa04small.png" alt="Unused models." /></a>
+			    </div>	
+			</div>
+			
+			
+			
+			
+			<h2 class="content-subhead">Custom Files Backup Application</h2>
+			<p style:"float: left">
+				Afraid of data loss, I built and application to do custom backups. Besides copying specified files to different drives, the program also keeps a detailed log of all movements, transactions and metadata for some filetypes. The metadata is particularly useful for music files, as it allows explore my own tastes and learn, for example, the most popular release years from all the music I listen to.
+			</p>
+
+			
+			
+				
+			
+			
+		  </div>
+	    </div>
+	</div>
+
+	<script src="./ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+		    beforeShow : function() {
+			  var alt = this.element.find('img').attr('alt');
+			  
+			  this.inner.find('img').attr('alt', alt);
+			  
+			  this.title = alt;
+		    }
+		});
+	});
+	</script>
+	
+	
+</body>
+</html>
